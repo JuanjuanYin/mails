@@ -1,0 +1,36 @@
+body {
+	padding-top: 20px;
+	background:  #f5f5f5;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+/* Mail styles */
+.mail-sender {
+	float: left;
+}
+
+.mail-date {
+	float: right;
+	font-size: 12px;
+}
+
+.mail-body {
+	color: #999;
+}
+
+.mail-unread {
+	font-weight: 700;
+}
+
+/* Panel overwrites */
+.panel {
+	margin-bottom: 10px;
+	border:        none;
+}
+
+.panel-body {
+	padding:       10px;
+	overflow:      hidden;
+	white-space:   nowrap;
+	text-overflow: ellipsis;
+}
