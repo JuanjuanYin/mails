@@ -49,7 +49,7 @@ $(document).ready(function () {
         $("#mails").append(content);
       }
 
-      //Remove style of unread mail if clicked
+      //Reduce font weight of unread mail if clicked
       $('.mail-unread').on('click', function () {
         $(this).removeClass('mail-unread');
       });

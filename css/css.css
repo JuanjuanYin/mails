@@ -1,5 +1,6 @@
 body {
 	padding-top: 20px;
+	color:       #757b85;
 	background:  #f5f5f5;
 	font-family: 'Maven Pro', sans-serif;
 }
@@ -7,15 +8,16 @@ body {
 /* Mail styles */
 .mail-sender {
 	float: left;
+	color: #38393c;
 }
 
 .mail-date {
-	float: right;
+	float:     right;
 	font-size: 12px;
 }
 
 .mail-body {
-	color: #999;
+	color: #c5c5c6;
 }
 
 .mail-unread {
