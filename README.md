@@ -9,8 +9,8 @@
   
 **script.js**
 * Herzstück des Scripts.
-* Die E-Mails werden aufgerufen und anhand der Vorgaben formatiert werden.
-* Ungelesene E-Mails werden fettgedruckt dargestellt, wobei mit einem Klick auf die E-Mail die Formatierung verschwindet.
+* Die E-Mails werden aufgerufen und anhand der Vorgaben formatiert dargestellt.
+* Ungelesene E-Mails werden fettgedruckt angezeigt, wobei mit einem Klick auf die E-Mail die Formatierung verschwindet.
 
 **css.css**
 * Beinhaltet Formatierungen der E-Mails.
