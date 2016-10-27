@@ -1,6 +1,6 @@
 ## Überblick
 * Das Script basiert auf den aktuellen Versionen von [Bootstrap](http://getbootstrap.com/) (v3.3.7) und [jQuery](https://jquery.com/) (v1.12.4).
-* Die E-Mails werden von `http://www.mocky.io/v2/580df778120000f60c078747` per JSONP Request geladen, um die Cross-Domain Problematik zu umgehen.
+* Die E-Mails werden per JSONP Request geladen, um die Cross-Domain Problematik zu umgehen.
 * Um das Script auszuführen, genügt es die Dateien lokal zu speichern und `index.html` zu öffnen.
 
 ## Beschreibung der Dateien
