@@ -9,20 +9,24 @@
 * Durch Aufrufen dieser Datei werden die E-Mails formatiert dargestellt. Es sind keine weiteren Einstellungen vorzunehmen.
 
 ### CSS Dateien
+`css.css`
+* Diese Datei beinhaltet die Formatierungen der E-Mails.
+* Die Stile der Bootstrap Panels werden teilweise überschrieben, um Platz zu sparen.
+
 `bootstrap.min.css`
 * Bootstrap
 
-`css.css`
-* Diese Datei beinhaltet Formatierungen der E-Mails.
-* Die Stile der Bootstrap Panels werden teilweise überschrieben, um Platz zu sparen.
-
 ### JS Dateien
-`jquery.min.js`
-* jQuery
-  
 `script.js`
 * Herzstück des Scripts.
 * Die E-Mails werden aufgerufen und anhand der Vorgaben formatiert.
 * Ungelesene E-Mails werden fettgedruckt angezeigt, wobei mit einem Klick auf eine E-Mail diese nicht mehr fettgedruckt dargestellt wird.
+
+`bootstrap.min.js`
+* Bootstrap
+
+`jquery.min.js`
+* jQuery
+
 
 
