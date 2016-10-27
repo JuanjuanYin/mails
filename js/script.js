@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  var mail_sender, date, mail_date, mail_body, mail_read_panel_style;
+  var mail_sender, date, mail_date, mail_body, mail_read_panel_style, mail_read_panel_badge;
 
   //Get mails via ajax
   $.ajax({
@@ -14,7 +14,7 @@ $(document).ready(function () {
 
         //Set date according to mail status
         if (data[x].status == 'DRAFT') {
-          date = '<span class="label label-warning">Entwurf</span>';
+          date = '<span class="label label-default">Entwurf</span>';
         } else {
           date = data[x].date.substr(0, 10);
         }
@@ -31,8 +31,10 @@ $(document).ready(function () {
         //Format mail panel according to read/unread
         if (!data[x].read) {
           mail_read_panel_style = '<div class="panel-body mail-unread">';
+          mail_read_panel_badge = '<span class="label label-info">NEU</span> ';
         } else {
           mail_read_panel_style = '<div class="panel-body">';
+          mail_read_panel_badge = '';
         }
 
         //Put mail into panel
@@ -40,7 +42,7 @@ $(document).ready(function () {
           '<div class="panel panel-default">' +
 
           mail_read_panel_style +
-          mail_sender + mail_date + '<br>' + data[x].subject + ' - ' + mail_body +
+          mail_sender + mail_date + '<br>' + mail_read_panel_badge + data[x].subject + ' - ' + mail_body +
           '</div>' +
 
           '</div>';
@@ -49,8 +51,9 @@ $(document).ready(function () {
         $("#mails").append(content);
       }
 
-      //Reduce font weight of unread mail if clicked
+      //Reduce font weight and hide "new" badge of unread mail if clicked
       $('.mail-unread').on('click', function () {
+        $(this).children('.label').hide(100);
         $(this).removeClass('mail-unread');
       });
     }
